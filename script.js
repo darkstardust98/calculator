@@ -81,45 +81,62 @@ let button_subtract = document.getElementById("-");
 let button_multiply = document.getElementById("*");
 let button_divide = document.getElementById("/");
 let button_equals = document.getElementById("=");
-let button0_clear = document.getElementsByClassName("clear");
+let button_clear = document.getElementsByClassName("clear");
 
 //Number event listeners
 button0.addEventListener('click', function() {
     display_value += "0";
+    document.getElementById("display_value").innerText = display_value;
 });
 
 button1.addEventListener('click', function() {
     display_value += "1";
+    document.getElementById("display_value").innerText = display_value;
 });
 
 button2.addEventListener('click', function() {
     display_value += "2";
+    document.getElementById("display_value").innerText = display_value;
 });
 
 button3.addEventListener('click', function() {
     display_value += "3";
+    document.getElementById("display_value").innerText = display_value;
+
 });
 
 button4.addEventListener('click', function() {
     display_value += "4";
+    document.getElementById("display_value").innerText = display_value;
+
 });
 
 button5.addEventListener('click', function() {
     display_value += "5";
+    document.getElementById("display_value").innerText = display_value;
+
 });
 
 button6.addEventListener('click', function() {
     display_value += "6";
+    document.getElementById("display_value").innerText = display_value;
+
 });
 
 button7.addEventListener('click', function() {
     display_value += "7";
+    document.getElementById("display_value").innerText = display_value;
+
 });
 
 button8.addEventListener('click', function() {
     display_value += "8";
+    document.getElementById("display_value").innerText = display_value;
+
 });
 
 button9.addEventListener('click', function() {
     display_value += "9";
+    document.getElementById("display_value").innerText = display_value;
+
 });
