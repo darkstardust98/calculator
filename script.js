@@ -51,8 +51,14 @@ function operate(num1, operate, num2) {
         
 }
 
+// TEST
+// console.log(operate(20, "*", 2));
+// console.log(operate(20, "/", 2));
+// console.log(operate(20, "+", 2));
+// console.log(operate(20, "-", 2));
 
-console.log(operate(20, "*", 2));
-console.log(operate(20, "/", 2));
-console.log(operate(20, "+", 2));
-console.log(operate(20, "-", 2));
+let display_value = 0;
+
+function update_display_value() {
+    
+}
