@@ -8,19 +8,19 @@
 .num {
     width: 30%;
     margin-bottom: 10px;
-
+    background-color: lightgreen;
 }
 
 .operator {
     width: 45%;
     margin-bottom: 10px;
-
+    background-color: lightcoral;
 }
 
 .equals {
     width: 60%;
     margin-bottom: 10px;
-
+    background-color: greenyellow;
 
 }
 
