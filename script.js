@@ -62,3 +62,23 @@ let display_value = 0;
 function update_display_value() {
     
 }
+
+//Number button event listeners
+let button0 = document.getElementById("0");
+let button1 = document.getElementById("1");
+let button2 = document.getElementById("2");
+let button3 = document.getElementById("3");
+let button4 = document.getElementById("4");
+let button5 = document.getElementById("5");
+let button6 = document.getElementById("6");
+let button7 = document.getElementById("7");
+let button8 = document.getElementById("8");
+let button9 = document.getElementById("9");
+
+//Operator button event listeners
+let button_add = document.getElementById("+");
+let button_subtract = document.getElementById("-");
+let button_multiply = document.getElementById("*");
+let button_divide = document.getElementById("/");
+let button_equals = document.getElementById("=");
+let button0_clear = document.getElementsByClassName("clear");
