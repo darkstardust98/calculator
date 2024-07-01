@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10px;
-    gap: 10px;
 }
 
 #num {
@@ -29,3 +28,7 @@
 * {
     background-color: aqua;
 } */
+
+#clear {
+    width: 60%;
+}
