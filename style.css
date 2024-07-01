@@ -5,19 +5,19 @@
     margin-bottom: 10px;
 }
 
-#num {
+.num {
     width: 30%;
     margin-bottom: 10px;
 
 }
 
-#operator {
+.operator {
     width: 45%;
     margin-bottom: 10px;
 
 }
 
-#equals {
+.equals {
     width: 60%;
     margin-bottom: 10px;
 
@@ -29,6 +29,6 @@
     background-color: aqua;
 } */
 
-#clear {
+.clear {
     width: 60%;
 }
