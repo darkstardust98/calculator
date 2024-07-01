@@ -25,7 +25,7 @@ function divide(num1, num2) {
 // console.log(divide(20,5));
 
 let first_number = 0;
-let operator = 0;
+let operator = "";
 let second_number = 0;
 
 function operate(num1, operate, num2) {
@@ -81,7 +81,7 @@ let button_subtract = document.getElementById("-");
 let button_multiply = document.getElementById("*");
 let button_divide = document.getElementById("/");
 let button_equals = document.getElementById("=");
-let button_clear = document.getElementsByClassName("clear");
+let button_clear = document.getElementById("clear");
 
 //Number event listeners
 button0.addEventListener('click', function() {
@@ -102,41 +102,86 @@ button2.addEventListener('click', function() {
 button3.addEventListener('click', function() {
     display_value += "3";
     document.getElementById("display_value").innerText = display_value;
-
 });
 
 button4.addEventListener('click', function() {
     display_value += "4";
     document.getElementById("display_value").innerText = display_value;
-
 });
 
 button5.addEventListener('click', function() {
     display_value += "5";
     document.getElementById("display_value").innerText = display_value;
-
 });
 
 button6.addEventListener('click', function() {
     display_value += "6";
     document.getElementById("display_value").innerText = display_value;
-
 });
 
 button7.addEventListener('click', function() {
     display_value += "7";
     document.getElementById("display_value").innerText = display_value;
-
 });
 
 button8.addEventListener('click', function() {
     display_value += "8";
     document.getElementById("display_value").innerText = display_value;
-
 });
 
 button9.addEventListener('click', function() {
     display_value += "9";
     document.getElementById("display_value").innerText = display_value;
+});
 
+
+//Operator event listeners
+button_add.addEventListener('click', function() {
+    first_number = Number(display_value);
+    operator = "+";
+    display_value = 0;
+    document.getElementById("display_value").innerText = display_value;
+    console.log(first_number);
+});
+
+button_subtract.addEventListener('click', function() {
+    first_number = Number(display_value);
+    operator = "-";
+    display_value = 0;
+    document.getElementById("display_value").innerText = display_value;
+});
+
+button_multiply.addEventListener('click', function() {
+    first_number = Number(display_value);
+    operator = "*";
+    display_value = 0;
+    document.getElementById("display_value").innerText = display_value;
+});
+
+button_divide.addEventListener('click', function() {
+    first_number = Number(display_value);
+    operator = "/";
+    display_value = 0;
+    document.getElementById("display_value").innerText = display_value;
+});
+
+//Equals event listener
+button_equals.addEventListener('click', function() {
+    console.log(first_number);
+    console.log(second_number);
+    console.log(operator);
+    second_number = Number(display_value);
+    display_value = 0;
+    second_number = operate(first_number, operator, second_number);
+    display_value = Number(second_number);
+    document.getElementById("display_value").innerText = display_value;
+});
+
+//Clear button event listener
+button_clear.addEventListener('click', function() {
+    first_number = 0;
+    second_number = 0;
+    display_value = 0;
+    operator = '';
+    document.getElementById("display_value").innerText = display_value;
 });
